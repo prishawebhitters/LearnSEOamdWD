@@ -1,0 +1,498 @@
+/* Logo Section */
+.navbar-logo {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    z-index: 1060;
+    display: flex;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+    margin-left: 15px; /* Keeps the logo on the left */
+    margin-top: 10px;
+  }
+  
+  /* Navigation Menu */
+  .navbar-menu {
+    position: sticky;
+    top: 60px;
+    width: 100%; 
+    background-color: #de3335;
+    z-index: 1029;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-menu .nav {
+    display: inline-block; /* Allows horizontal centering */
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .navbar-menu .nav > li {
+    display: inline-block; /* Ensures horizontal alignment of links */
+    margin: 0 15px; /* Adds spacing between links */
+    justify-content: center;
+  }
+  
+  .navbar-menu .nav > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px; /* Adds clickable padding */
+    justify-content: center;
+  }
+  
+  .navbar-menu .nav > li > a:hover {
+    text-decoration: underline;
+    justify-content: center;
+    background-color: #de3335;
+  }  
+
+  .container .info-card{
+    background-color: #f1efee ;
+  }
+  .info-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);/* Add shadow effect */
+  }
+  .info-card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .info-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+  .rating {
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    background-color: #e8e6e6;
+  }
+  .rating .star {
+    color: #FDB515;
+    margin-right: 5px;
+  }
+  .rating span {
+    margin-right: 10px;
+  }
+
+#a{
+    border-right: 1px solid black;
+}
+#b{
+    border-right: 1px solid black;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.btn-apply,
+.btn-download {
+    display: inline-block;  /* Ensures the buttons are inline elements */
+    width: 350px;           /* Set equal width */
+    height: 60px;           /* Set equal height */
+    padding: 0;             /* Remove default padding since width and height are fixed */
+    font-size: 15px;        /* Set font size for readability */
+    font-weight: bold;
+    text-align: center;     /* Center-align text */
+    line-height: 60px;      /* Vertically center text using line-height equal to height */
+    border: none;
+    border-radius: 5px;     /* Rounded corners */
+    cursor: pointer;
+}
+
+/* Apply button-specific styles */
+.btn-apply {
+    background-color: #de3335;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-apply:hover {
+    background-color: #da1111;
+}
+
+.btn-download {
+    background-color: black;
+    color: #fff;
+}
+
+.btn-download:hover {
+    background-color: #343131;
+    color: whitesmoke;
+}
+
+.cen{
+    text-align: center;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.course-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* Responsive width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: space-between; /* Space items evenly */
+    min-height: 450px; /* Set a minimum height for equal size */
+    margin-bottom: 40px;
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height:150px;
+}
+
+.course-card h4 {
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.course-card p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+
+.btn-black {
+    background-color: black;
+}
+.tools-section {
+    background-color: #de3335; /* Red background */
+    padding: 30px 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tools-section h2 {
+    font-size: 28px;
+    color: white; /* White text for good contrast */
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.tools-section h2 span {
+    color: orange; /* Highlighted text in orange */
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next row */
+    justify-content: center; /* Center-align the items horizontally */
+    align-items: center; /* Center-align the items vertically */
+    gap: 15px; /* Reduced space between items */
+    width: 100%; /* Use full width of the container */
+    max-width: 700px; /* Set maximum width */
+    margin: 0 auto; /* Center the entire list within its parent */
+}
+
+.tool-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px; /* Smaller padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; /* Reduced height */
+    width: 70px; /* Smaller width */
+    flex-basis: calc(20% - 15px); /* Adjusted for smaller items */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Adds shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-item img {
+    max-width: 90%; /* Fit smaller size */
+    max-height: 90%; /* Fit smaller size */
+}
+
+.tool-item:hover {
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.trainers {
+    text-align: center;
+    margin: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.trainers h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Carousel item container styles */
+.owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);/* Add shadow effect */
+    margin: 20px;
+    margin-top: 20px;
+}
+
+/* Adjust the size of the images */
+.owl-carousel .item img {
+    max-width: 80%; /* Adjust width to fit 4 items */
+    height: auto;
+    border-radius: 10px; /* Optional for rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+/* Hover effect */
+.owl-carousel .item:hover {
+    transform: scale(1.05);
+}
+
+/* Text styles (adjust font size for smaller content) */
+.owl-carousel .item h4 {
+    margin: 10px 0 5px;
+    font-size: 18px; /* Smaller font size */
+    font-weight: bold;
+}
+
+.owl-carousel .item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Navigation buttons */
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.owl-nav button.owl-prev {
+    left: -30px;
+}
+
+.owl-nav button.owl-next {
+    right: -30px;
+}
+
+.owl-nav button:hover {
+    color: #000;
+}
+.partner-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.partner-card img {
+    max-height: 40px;
+    margin-bottom: 15px;
+}
+.faq-section {
+    padding: 40px 20px;
+}
+.faq-section h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Panel Styling */
+.panel-group .panel {
+    background-color: #eef7f8;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.panel-heading {
+    background-color: #eef7f8;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+.panel-heading a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+.panel-heading a:after {
+    content: '\f107'; /* Down Arrow (Font Awesome) */
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #333;
+}
+
+.panel-body {
+    background-color: #fff;
+    color: #555;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+/* Testimonials Section */
+.testimonial-section {
+    padding: 50px 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.testimonial-section h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+}
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: left;
+}
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.testimonial-card .testimonial-header {
+    display: flex;
+    align-items: center;
+}
+.testimonial-card .testimonial-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+.testimonial-card .testimonial-date {
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.testimonial-card p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    background-color: #1c1c1c;
+    padding: 30px 0;
+    color: #fff;
+}
+.footer h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.footer p, .footer a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #f39c12;
+}
+.social-icons a {
+    margin: 0 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.social-icons a:hover {
+    color: #f39c12;
+}
+.footer .map {
+    margin-top: 15px;
+}
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+h2{
+    font-size: 28px;
+}
