@@ -151,55 +151,54 @@
     margin-right: auto;
     width: 80%;
 }
-.course-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-}
 
-.course-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+.module-container {
+    padding: 40px 20px;
     text-align: center;
-    flex: 1 1 calc(25% - 20px); /* Responsive width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column; /* Align content vertically */
-    justify-content: space-between; /* Space items evenly */
-    min-height: 450px; /* Set a minimum height for equal size */
-    margin-bottom: 40px;
+    background: url('Images/background.png') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    color: #fff;
 }
-
-.course-card:hover {
-    transform: scale(1.05); /* Slightly enlarges the card on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
-}
-
-.course-card img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    height:150px;
-}
-
-.course-card h4 {
-    margin-top: 15px;
-    color: #333;
+.module-title {
+    font-size: 24px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
-
-.course-card p {
-    color: #777;
-    margin-bottom: 15px;
+.module-title span {
+    color: #e74c3c;
 }
-
-
-.btn-black {
-    background-color: black;
+.module-box {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    height: 70px;
+    width: 150px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.module-box:hover {
+    background: #e74c3c;
+    color: #fff;
+    border-color: #e74c3c;
+}
+.enroll-btn {
+    margin-top: 20px;
+    background: #de3335;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.enroll-btn:hover {
+    background: #c0392b;
 }
 .tools-section {
     background-color: #de3335; /* Red background */
