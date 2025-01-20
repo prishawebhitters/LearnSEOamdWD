@@ -1009,3 +1009,30 @@ h2{
         z-index: 2;
     }
 }
+.btn-div {
+    /* margin-top: 30px; */
+    background: #DE3335;
+    height: 2.4rem;
+    width: 174px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-div:hover {
+    background: black !important;
+    color: white;
+    transition: all .3s linear;
+}
+.send-msg-btn {
+    background: #DE3335;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.send-msg-btn:hover {
+    background: white;
+    color: black !important;
+    transition: all .3s linear;
+}
