@@ -497,3 +497,213 @@ html {
 h2{
     font-size: 28px;
 }
+.bg-img-of-btn {
+    background-image: url(Images/background.png);
+    background-size: cover;
+}
+
+.pulse {
+    background: none;
+    --color: white;
+    --hover: #DE3335;
+    color: var(--color);
+    border: 2px solid var(--color);
+    font: inherit;
+    line-height: 1;
+    margin: 0.4em;
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.25s;
+}
+
+.pulse:hover,
+.pulse:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    color: #fff;
+    border-color: var(--hover);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 var(--hover);
+    }
+}
+
+.enroll-btn {
+    background: #DE3335;
+    width: 150px;
+}
+
+.buttons button {
+    height: 70px;
+    width: 146px;
+}
+.course-box img {
+    border-radius: 10px;
+}
+
+.course-box1 {
+    height: 373px;
+    width: 286px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h1-of-courses {
+    font-weight: bolder;
+}
+
+.course-box1-h1 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.snip1273 {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    position: relative;
+    min-width: 310px 60px;
+    max-width: 310px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    background-color: #000000;
+    font-size: 16px;
+    margin: auto;
+}
+.snip1273 img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    vertical-align: top;
+}
+.snip1273 figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.snip1273 figcaption:before,
+.snip1273 figcaption:after {
+    width: 5px;
+    height: 3px;
+}
+
+.snip1273 figcaption:before {
+    right: 0;
+    top: 0;
+}
+
+.snip1273 figcaption:after {
+    left: 0;
+    bottom: 0;
+}
+
+.snip1273 h3 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+}
+
+*/ .snip1273 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.snip1273:before,
+.snip1273:after,
+.snip1273 figcaption:before,
+.snip1273 figcaption:after {
+    position: absolute;
+    content: '';
+    background-color: #a51b1b;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0.8;
+}
+
+.snip1273:before,
+.snip1273:after {
+    cursor: pointer;
+    height: 5px;
+    width: 0%;
+}
+
+.snip1273:before {
+    top: 0;
+    left: 0;
+}
+
+.snip1273:after {
+    bottom: 0;
+    right: 0;
+}
+
+.snip1273:hover img,
+.snip1273.hover img {
+    opacity: 0.4;
+}
+
+.snip1273:hover figcaption,
+.snip1273.hover figcaption {
+    opacity: 1;
+}
+
+.snip1273:hover figcaption:before,
+.snip1273.hover figcaption:before,
+.snip1273:hover figcaption:after,
+.snip1273.hover figcaption:after {
+    height: 100%;
+}
+
+.snip1273:hover:before,
+.snip1273.hover:before,
+.snip1273:hover:after,
+.snip1273.hover:after {
+    width: 100%;
+}
+.enrol-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.enrol-button {
+    background: #DE3335;
+    height: 2.4rem;
+    width: 174px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: white;
+    border: #DE3335;
+    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.img1-div-of-price:hover img {
+    opacity: 0.3;
+}
+
+.img1-div-of-price:hover .enrol-button {
+    opacity: 1;
+    background-color: #DE3335;
+    color: white;
+    border-color: white;
+}
