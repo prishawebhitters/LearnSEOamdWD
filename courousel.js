@@ -10,4 +10,4 @@ $(document).ready(function () {
             1000: { items: 4 }  // 4 items for larger screens
         }
     });
-  });
+});
