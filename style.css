@@ -1062,7 +1062,7 @@ h2{
   .associated-slider {
     display: flex;
     align-items: center;
-    animation: scroll 20s linear infinite;
+    animation: scroll 100s linear infinite;
   }
 
   .associated-slide {
@@ -1072,7 +1072,7 @@ h2{
 
   .associated-slide img {
     width: 150px;
-    height: auto;
+    height: 80px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
