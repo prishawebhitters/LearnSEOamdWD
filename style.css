@@ -1049,3 +1049,40 @@ h2{
     color: white;
     transition: all .3s linear;
 }
+.associated-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Adjust as needed */
+  }
+
+  .associated-slider {
+    display: flex;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+  }
+
+  .associated-slide {
+    margin: 0 10px;
+    flex-shrink: 0;
+  }
+
+  .associated-slide img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Infinite scrolling keyframes */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

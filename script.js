@@ -159,52 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
       updateCount();
     });
   });
-
-
-  // ==============review slider-========================
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var sliderContainer = document.querySelector('.slider-container');
-    var slides = sliderContainer.children;
-    var slideCount = slides.length;
-    var slideWidth = slides[0].offsetWidth;
-    var slideDuration = 2000;
-    var currentIndex = 0;
-    var intervalId;
-    var stopSlideId = 'stopSlide';
-    function autoSlide() {
-      intervalId = setInterval(function () {
-        currentIndex = (currentIndex + 1) % slideCount;
-        moveSlide(currentIndex);
-        if (slides[currentIndex].id === stopSlideId) {
-          clearInterval(intervalId);
-          setTimeout(function () {
-            currentIndex = 0;
-            moveSlide(currentIndex);
-            autoSlide();
-          }, slideDuration);
-        }
-      }, slideDuration);
-    }
-  
-    function moveSlide(index) {
-      sliderContainer.style.transition = 'transform 0.3s ease-in-out';
-      sliderContainer.style.transform = 'translateX(' + (-index * slideWidth) + 'px)';
-    }
-  
-    autoSlide();
-    sliderContainer.addEventListener('mouseenter', function () {
-      clearInterval(intervalId);
-    });
-  
-    sliderContainer.addEventListener('mouseleave', function () {
-      if (slides[currentIndex].id !== stopSlideId) {
-        autoSlide();
-      }
-    });
-  });
-
 // ====================== question section==================
 const questions = document.querySelectorAll('.first-question1');
 const answers = document.querySelectorAll('.first-question2');
