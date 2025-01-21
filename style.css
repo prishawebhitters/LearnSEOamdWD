@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    background-color: #fff;
     height: 60px;
     z-index: 1060;
     display: flex;
@@ -55,11 +55,11 @@
   }  
 
   .number-section-of-hero {
-    background: linear-gradient(135deg, #ff6347, #4a4a4a);
+    background: #de3335;
     border-radius: 15px;
     color: #fff;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins';
     transition: transform 0.3s ease-out, background-color 0.3s ease-out;
     margin-top: 50px;
 }
@@ -71,15 +71,9 @@
     }
 } */
 
-#a{
-    border-right: 1px solid black;
-}
-#b{
-    border-right: 1px solid black;
-}
 .abc {
     font-family: Georgia, serif;
-    font-size: 30px;
+    font-size: 45px;
     margin-top:20px;
 }
 .button-container {
@@ -99,27 +93,34 @@
     border: none;
     border-radius: 5px;     /* Rounded corners */
     cursor: pointer;
-}
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: transform 0.5s ease;
 
-/* Apply button-specific styles */
+}
 .btn-apply {
     background-color: #de3335;
+    background-image: linear-gradient(to bottom right, #de3335, #e15454 );
     color: #fff;
     margin-right: 10px;
 }
 
 .btn-apply:hover {
     background-color: #da1111;
+    transform: translateY(-5px);
 }
 
 .btn-download {
     background-color: black;
+    background-image: linear-gradient(to bottom right, black, #312f2f);
     color: #fff;
 }
 
 .btn-download:hover {
     background-color: #343131;
-    color: whitesmoke;
+    color:#777;
+    transform: translateY(-5px);
 }
 
 .cen{
@@ -181,7 +182,7 @@
     background: #c0392b;
 }
 .tools-section {
-    background-color: #de3335; /* Red background */
+    background-color: #f1eeee  ; /* Red background */
     padding: 30px 15px;
     text-align: center;
     margin-top: 40px;
@@ -189,7 +190,7 @@
 
 .tools-section h2 {
     font-size: 28px;
-    color: white; /* White text for good contrast */
+     /* White text for good contrast */
     font-weight: bold;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -246,6 +247,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     color: #333;
+
 }
 
 /* Carousel item container styles */
@@ -378,52 +380,72 @@
 }
 /* Testimonials Section */
 .testimonial-section {
-    padding: 50px 15px;
-    background-color: #f9f9f9;
+    margin-top: 40px;
+    padding:20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.carousel-slide {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.testimonial-card {
+    width: 200px;
+    margin: 0 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-.testimonial-section h2 {
-    margin-bottom: 30px;
-    font-weight: bold;
-    color: #333;
-}
-.testimonial-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    text-align: left;
-}
+
 .testimonial-card img {
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+    height: 100px;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 2px solid #f4f4f4;
 }
-.testimonial-card .testimonial-header {
-    display: flex;
-    align-items: center;
+
+.testimonial-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
 }
-.testimonial-card .testimonial-name {
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0;
-}
-.testimonial-card .testimonial-date {
-    color: #999;
-    font-size: 14px;
-    margin-left: 10px;
-}
+
 .testimonial-card p {
-    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h5 {
     font-size: 14px;
-    color: #555;
+    color: #333;
+    font-weight: bold;
 }
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
 }
 .footer {
     background-color: #1c1c1c;
@@ -1088,4 +1110,37 @@ h2{
     100% {
       transform: translateX(-100%);
     }
+  }
+  .def{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    border-radius: 15px; 
+  }
+  .owl-carousel .testimonial-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);/* Add shadow effect */
+    margin: 20px;
+    margin-top: 20px;
+    height: 300px;
+    width: 250px;
+    color: black;
+  }
+  .ac{
+    text-align: center;
+    margin: 40px;
+    border-radius: 10px;
+  }
+  .btn-view{
+    background-color: #de3335;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
