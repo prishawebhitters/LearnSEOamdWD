@@ -442,6 +442,9 @@ body {
 .footer a:hover {
     color: #f39c12;
 }
+.social-icons{
+    margin-bottom: 10px;
+}
 .social-icons a {
     margin: 0 10px;
     font-size: 18px;
