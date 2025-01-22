@@ -200,10 +200,6 @@
     margin-top: 10px;
 }
 
-.tools-section h2 span {
-    color: orange; /* Highlighted text in orange */
-}
-
 .tools-list {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping to the next row */
@@ -211,7 +207,7 @@
     align-items: center; /* Center-align the items vertically */
     gap: 15px; /* Reduced space between items */
     width: 100%; /* Use full width of the container */
-    max-width: 700px; /* Set maximum width */
+    max-width: 1000px; /* Set maximum width */
     margin: 0 auto; /* Center the entire list within its parent */
 }
 
@@ -223,8 +219,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px; /* Reduced height */
-    width: 70px; /* Smaller width */
+    height: 80px; /* Reduced height */
+    width: 150px; 
     flex-basis: calc(20% - 15px); /* Adjusted for smaller items */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Adds shadow effect */
     transition: transform 0.3s, box-shadow 0.3s;
@@ -1257,4 +1253,45 @@ h2{
     width: 100px !important;
     height: auto;
     flex-shrink: 0;
+}
+  .success-stories {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1eeee; /* Dark green background */
+    color: black;
+  }
+
+  .success-stories h2 {
+    margin-bottom: 10px;
+  }
+
+  .profile-card {
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    width: 300px; /* Fixed card width */
+    margin-left: 70px;
+  }
+
+  .profile-card img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+.accredited-section{
+    padding: 30px 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+.accredited-list{
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+    height: 80px;
 }
