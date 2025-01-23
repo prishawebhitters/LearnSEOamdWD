@@ -29,7 +29,7 @@
 <!--Navbar Section-->
 <!-- Navbar for Logo -->
 <div class="navbar-logo">
-    <img src="Images/logo.png" alt="Logo">
+    <img src="Images/Tools/logo.png" alt="Logo">
     <div class="col-md-11 text-right" style="margin-right: 120px;">
         <div class="social-icons">
             <a href="https://www.instagram.com/learnseo_webdesign/" target="_blank">
@@ -340,9 +340,22 @@
             <img src="Images/Associated With logo/Test-Ilets.jpg" alt="Test-Ilets">
         </div>
     </div>
-    <br><br>
-    <p style="font-size: 16px;"><b>+ Many more</b></p>
+    <button id="show-more-btn" class="btn-read-more">
+        Many more
+    </button>
+    <div id="additional-content" style="display: none; margin-top: 20px;">
+        <div class="tool-item">
+            <img src="Images/Associated With logo/The Green Nest.jpg" alt="The Green Nest">
+        </div>
+        <div class="tool-item">
+            <img src="Images/Associated With logo/Nivesh Consultant.jpg" alt="Nivesh Consultant">
+        </div>
+        <div class="tool-item">
+            <img src="Images/Associated With logo/Partner-3.jpg" alt="Partner 3">
+        </div>
+    </div>
 </div>
+
 <!--Start your Journey-->
 <div class="container">
     <div class="row">
@@ -517,37 +530,46 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
     <h2>Master<span style="color:#de3335"> Industry-Relevant Tools</span></h2>
     <div class="tools-list">
         <div class="tool-item">
-            <img src="Images/ahrefs.png" alt="Ahrefs">
+            <img src="Images/Tools/ahrefs.png" alt="Ahrefs">
         </div>
         <div class="tool-item">
-            <img src="Images/moz.png" alt="MOZ">
+            <img src="Images/Tools/moz.png" alt="MOZ">
         </div>
         <div class="tool-item">
-            <img src="Images/ads.png" alt="Google Ads">
+            <img src="Images/Tools/ads.png" alt="Google Ads">
         </div>
         <div class="tool-item">
-            <img src="Images/google-analytics.png" alt="Google Analytics">
+            <img src="Images/Tools/google-analytics.png" alt="Google Analytics">
         </div>
         <div class="tool-item">
-            <img src="Images/ds.png" alt="Google Data Studio">
+            <img src="Images/Tools/ds.png" alt="Google Data Studio">
         </div>
         <div class="tool-item">
-            <img src="Images/search.png" alt="Google Search Console">
+            <img src="Images/Tools/search.png" alt="Google Search Console">
         </div>
         <div class="tool-item">
-            <img src="Images/scre-ming-frog.png" alt="Screming Frog">
+            <img src="Images/Tools/scre-ming-frog.png" alt="Screming Frog">
         </div>
         <div class="tool-item">
-            <img src="Images/thehoth.png" alt="The HOTH">
+            <img src="Images/Tools/thehoth.png" alt="The HOTH">
         </div>
         <div class="tool-item">
-            <img src="Images/Youtube.jpg" alt="YouTube">
+            <img src="Images/Tools/neilpatel.png" alt="NeilPatel">
         </div>
         <div class="tool-item">
-            <img src="Images/gpt.png" alt="ChatGPT">
+            <img src="Images/Tools/gpt.png" alt="ChatGPT">
         </div>
         <div class="tool-item">
-            <img src="Images/Canva.png" alt="Canva">
+            <img src="Images/Tools/Canva.png" alt="Canva">
+        </div>
+        <div class="tool-item">
+            <img src="Images/Tools/Seo-Site-Checkup.png" alt="Seo-Site-Checkup">
+        </div>
+        <div class="tool-item">
+            <img src="Images/Tools/google-adwords.png" alt="google-adwords">
+        </div>
+        <div class="tool-item">
+            <img src="Images/Tools/google-pagespeed-insights.png" alt="google-pagespeed-insights">
         </div>
     </div>
 </div>
@@ -876,7 +898,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
             <img src="Images/msme.png" alt="Test-Ilets">
         </div>
         <div class="tool-item">
-            <img src="Images/Associated With logo/Test-Ilets.jpg" alt="Test-Ilets">
+            <img src="Images/nasscom.png"alt="Test-Ilets">
         </div>
     </div>
 </div>
@@ -1045,87 +1067,82 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"
     </div>
 </div>
 <!--FAQ's Section -->
-<main class="card">
-    <div class="hero">
-      <img src="Images/faq.jpg" alt="section image" class="img" height="100px">
+<div class="container faq-section" id="faqs">
+    <h2 style="margin-bottom: 26px;">Still have <span style="color:#de3335">Doubts?</span></h2>
+    <p style="text-align: center; font-size: 16px">We have answered some of the frequent questions for you!</p>
+    <div class="panel-group" id="faqAccordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1">Are you a company or a Institute?</a>
+                </h4>
+            </div>
+            <div id="faq1" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">We are company that provide practical training to students.</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2">Can I pay fees in installments?</a>
+                </h4>
+            </div>
+            <div id="faq2" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, fees can be paid in installments</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq3">Do you provide website designing and digital marketing services?</a>
+                </h4>
+            </div>
+            <div id="faq3" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, we do provide, you can call at 9646204610 for more details.</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4">Do you provide internships?</a>
+                </h4>
+            </div>
+            <div id="faq4" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, we do provide internships</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5">Do we get course certificate?</a>
+                </h4>
+            </div>
+            <div id="faq5" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, you will be getting course certificate after the course</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq6">How are you different from others?</a>
+                </h4>
+            </div>
+            <div id="faq6" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">We focus on practical training not theoretical</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq7">Who can do the course?</a>
+                </h4>
+            </div>
+            <div id="faq7" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Anyone who has BASIC computer knowledge can do the course</div>
+            </div>
+        </div>
     </div>
-  
-    <h2 class="title">Frequently Asked Questions</h2>
-  
-    <div class="acc-container">
-  
-      <button class="acc-btn">What is the definition of a will?</button>
-      <div class="acc-content">
-        <p>
-          It is a dead giveaway.
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        What happens to chemists when they die?
-      </button>
-      <div class="acc-content">
-        <p>
-          We barium [bury them].
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        Why does the leopard find it difficult to hide and stalk?
-      </button>
-      <div class="acc-content">
-        <p>
-          Because he is spotted always.
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        What kind of key opens a banana?
-      </button>
-      <div class="acc-content">
-        <p>
-          A monkey. 🙈
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        Where does a tree store it's stuff?
-      </button>
-      <div class="acc-content">
-        <p>
-          In it's Trunk.
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        What dog is known for its punctuality?
-      </button>
-      <div class="acc-content">
-        <p>
-          The watch-dog 🐕
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        Name a thing that has four wheels and flies?
-      </button>
-      <div class="acc-content">
-        <p>
-          The garbage truck, of course.
-        </p>
-      </div>
-  
-      <button class="acc-btn">
-        Why was everyone so tired on the First of April?
-      </button>
-      <div class="acc-content">
-        <p>
-          Because they had just completed a March of 31 days.
-        </p>
-      </div>
-  
-    </div>
-</main>  
+</div>
 <!--Additional Changes-->
 <div class=" container ">
     <div class="d-lg-flex" style="gap: 10px;">

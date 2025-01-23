@@ -1397,7 +1397,6 @@ h2{
     line-height: 140%;
     background-color: #f3f6f6;
     opacity: 0.3;
-    
     opacity: 1;
     display: grid;
     place-items: center;
@@ -1419,13 +1418,8 @@ h2{
     transform: translateY(-55%);
 }
 .hero .img {
-    filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
     transition: 0.3s ease-out;
 }
-.card:hover .img {
-    filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
-}
-
 .title {
     text-align: center;
     font-size: 5rem;
@@ -1469,13 +1463,4 @@ h2{
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     border-bottom: 1px solid #ccc;
-}
-
-.credit {
-    text-align: center;
-    padding: 1rem;
-}
-.credit a {
-    text-decoration: wavy underline;
-    color: dodgerblue;
 }
