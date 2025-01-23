@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
           button.textContent = 'Show Less'; // Update button text
       } else {
           additionalContent.style.display = 'none'; // Hide the content
-          button.textContent = '+ Many more'; // Revert button text
+          button.textContent = 'Many more'; // Revert button text
       }
   });
 });
