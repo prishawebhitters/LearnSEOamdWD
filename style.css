@@ -74,8 +74,8 @@
 
 .abc {
     font-family: Georgia, serif;
-    font-size: 45px;
-    margin-top:20px;
+    font-size: 55px;
+    margin-top: 20px;
 }
 .button-container {
     text-align: center;
@@ -92,7 +92,6 @@
     height: 60px;           /* Set equal height */
     padding: 0;             /* Remove default padding since width and height are fixed */
     font-size: 18px;        /* Set font size for readability */
-    font-weight: bold;
     text-align: center;     /* Center-align text */
     line-height: 60px;      /* Vertically center text using line-height equal to height */
     border: none;
@@ -100,6 +99,7 @@
     cursor: pointer;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
     transition: transform 0.5s ease;
+    font-family: Georgia, serif;
 }
 .btn-apply {
     background-color: #de3335;
@@ -904,7 +904,7 @@ h2{
     padding-left: 5px;
 }
 .gallery {
-    margin-top: 10px;
+    margin-top: 15px;
     display: grid;
     max-width: 90%;
     height: 80%;
@@ -913,8 +913,8 @@ h2{
 .gallery>img {
     display: grid;
     grid-area: 9/1;
-    width: 90%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     aspect-ratio: 1;
     object-fit: cover;
     border: 10px solid #f2f2f2;
@@ -1203,7 +1203,8 @@ h2{
     transition: all .3s linear;
 }
 .vdc {
- background-color:  #f1eeee;
+ background-image:url('Images/bg1.jpg');
+ background-size: 100%;
  text-align: center;
 }
 .highlight-card {
@@ -1569,26 +1570,83 @@ h2{
         transform: translateY(-10px);
     }
 }
+/* General Section Styling */
 .curriculum-section {
-    padding: 50px 20px;
-    background-color: #fff;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
 }
 
 .curriculum-title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
     color: #333;
     text-align: center;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .curriculum-subtitle {
-    font-size: 16px;
-    color: #555;
     text-align: center;
+    font-size: 18px;
+    color: #555;
     margin-bottom: 30px;
 }
 
+/* Panel Group */
+.panel {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.panel:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+    background: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.panel-heading:hover {
+    background: #f2f2f2;
+}
+
+.panel-heading .meta-info {
+    font-size: 14px;
+    color: #888;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    transition: transform 0.3s ease;
+}
+
+.panel-heading.collapsed .toggle-icon {
+    transform: rotate(90deg);
+}
+
+.panel-body {
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+/* Module List */
 .module-list {
     list-style: none;
     padding: 0;
@@ -1596,18 +1654,24 @@ h2{
 }
 
 .module-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    padding: 15px 10px;
+    border-bottom: 1px solid #f1f1f1;
+    transition: background-color 0.3s ease;
 }
 
-.module-list li:last-child {
-    border-bottom: none;
+.module-list li:hover {
+    background: #f9f9f9;
 }
 
-.module-list .module-title {
-    font-size: 14px;
+.module-title {
+    font-size: 16px;
+    font-weight: bold;
     color: #333;
+}
+
+.module-subtitle {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-top: 5px;
 }
