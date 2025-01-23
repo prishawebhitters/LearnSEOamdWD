@@ -1,41 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-  
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" 
-    href="captcha.css">
-    <link rel="stylesheet" href=
-"https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity=
-"sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-        crossorigin="anonymous">
-    <script src="captcha.js"></script>
-</head>
-
-<body onload="generate()">
-    <div id="user-input" class="inline">
-        <input type="text" 
-               id="submit" 
-               placeholder="Captcha code" />
+<div class="container faq-section" id="faqs">
+    <h2 style="margin-bottom: 26px;">Still have <span style="color:#de3335">Doubts?</span></h2>
+    <p style="text-align: center; font-size: 16px">We have answered some of the frequent questions for you!</p>
+    <div class="panel-group" id="faqAccordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1">Are you a company or a Institute?</a>
+                </h4>
+            </div>
+            <div id="faq1" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">We are company that provide practical training to students.</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2">Can I pay fees in installments?</a>
+                </h4>
+            </div>
+            <div id="faq2" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, fees can be paid in installments</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq3">Do you provide website designing and digital marketing services?</a>
+                </h4>
+            </div>
+            <div id="faq3" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, we do provide, you can call at 9646204610 for more details.</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4">Do you provide internships?</a>
+                </h4>
+            </div>
+            <div id="faq4" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, we do provide internships</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5">Do we get course certificate?</a>
+                </h4>
+            </div>
+            <div id="faq5" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Yes, you will be getting course certificate after the course</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq6">How are you different from others?</a>
+                </h4>
+            </div>
+            <div id="faq6" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">We focus on practical training not theoretical</div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq7">Who can do the course?</a>
+                </h4>
+            </div>
+            <div id="faq7" class="panel-collapse collapse">
+                <div class="panel-body" style="font-size: 14px;">Anyone who has BASIC computer knowledge can do the course</div>
+            </div>
+        </div>
     </div>
-
-    <div class="inline" onclick="generate()">
-        <i class="fas fa-sync"></i>
-    </div>
-
-    <div id="image" 
-         class="inline" 
-         selectable="False">
-    </div>
-    <input type="submit" 
-           id="btn" 
-           onclick="printmsg()" />
-
-    <p id="key"></p>
-</body>
-  
-</html>
+</div>
