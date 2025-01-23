@@ -62,6 +62,7 @@
     font-family: 'Poppins';
     transition: transform 0.3s ease-out, background-color 0.3s ease-out;
     margin-top: 50px;
+    width: 1200px;
 }
 
 /* @media (max-width: 600px) {
@@ -90,18 +91,15 @@
     width: 350px;           /* Set equal width */
     height: 60px;           /* Set equal height */
     padding: 0;             /* Remove default padding since width and height are fixed */
-    font-size: 15px;        /* Set font size for readability */
+    font-size: 18px;        /* Set font size for readability */
     font-weight: bold;
     text-align: center;     /* Center-align text */
     line-height: 60px;      /* Vertically center text using line-height equal to height */
     border: none;
     border-radius: 5px;     /* Rounded corners */
     cursor: pointer;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
     transition: transform 0.5s ease;
-
 }
 .btn-apply {
     background-color: #de3335;
@@ -344,15 +342,17 @@
 .panel-group .panel {
     background-color: #eef7f8;
     border: none;
-    border-radius: 4px;
-    margin-bottom: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 .panel-heading {
     background-color: #eef7f8;
     border: none;
     border-radius: 4px;
     padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
 }
 .panel-heading a {
     text-decoration: none;
@@ -686,8 +686,8 @@ h2{
 
 .enrol-button {
     background: #DE3335;
-    height: 2.4rem;
-    width: 174px;
+    height: 30px;
+    width: 200px;
     color: white;
     border: none;
     border-radius: 15px;
@@ -1068,9 +1068,9 @@ h2{
     border: none;
     padding: 10px;
     border-radius: 15px;
-    height: 30px;
-    font-size: 14px;
-    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    width: 200px;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -1186,7 +1186,7 @@ h2{
 }
 .batch-date {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 .apply-btn {
     background-color: #de3335;
@@ -1195,7 +1195,7 @@ h2{
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 5px;
-    width: 100%;
+    width: 250px;
 }
 .apply-btn:hover{
     background: black !important;
@@ -1212,14 +1212,17 @@ h2{
     border-radius: 5px;
     text-align: center;
     margin: 10px;
-    height: 70px;
-    width: 200px;
+    height: 80px;
+    width: 250px;
     margin-left: 50px;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 .form-section, .highlights-section {
     padding: 30px;
+}
+.highlights-section{
+    margin-top: 20px;
 }
 .form-container {
     background: white;
@@ -1227,7 +1230,7 @@ h2{
     border-radius: 10px;
     color: black;
     width: 450px;
-    height: 450px;
+    height: 500px;
     font-size: 14px;
 }
 .form-container input, .form-container select {
@@ -1245,7 +1248,7 @@ h2{
     margin-top: 10px;
 }
 .hhh{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 100%;
     color: #fff;
@@ -1565,4 +1568,46 @@ h2{
     50% {
         transform: translateY(-10px);
     }
+}
+.curriculum-section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.curriculum-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.curriculum-subtitle {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.module-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.module-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.module-list li:last-child {
+    border-bottom: none;
+}
+
+.module-list .module-title {
+    font-size: 14px;
+    color: #333;
 }
