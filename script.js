@@ -222,19 +222,6 @@ setTimeout(() => {
 //  console.log(Date())
 setTimeout(showPopup, 10000);
 
-// Navigation controls
-    document.getElementById("prev").addEventListener("click", function(event) {
-      event.preventDefault();
-      const container = document.querySelector(".carousel-inner");
-      container.scrollBy({ left: -260, behavior: "smooth" });
-    });
-
-    document.getElementById("next").addEventListener("click", function(event) {
-      event.preventDefault();
-      const container = document.querySelector(".carousel-inner");
-      container.scrollBy({ left: 260, behavior: "smooth" });
-    });
-
 //Many more
 document.addEventListener("DOMContentLoaded", function () {
   // Get the button and additional content
