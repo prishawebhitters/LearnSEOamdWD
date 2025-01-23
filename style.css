@@ -1228,6 +1228,7 @@ h2{
     color: black;
     width: 450px;
     height: 450px;
+    font-size: 14px;
 }
 .form-container input, .form-container select {
     width: 100%;
@@ -1529,8 +1530,9 @@ h2{
 }
 
 .cta-button:hover {
-    background-color: #c42e30;
-    transform: translateY(-2px);
+    background: black !important;
+    color: white;
+    transition: all .3s linear;
 }
 
 /* Animations */
