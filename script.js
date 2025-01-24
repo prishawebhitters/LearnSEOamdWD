@@ -237,3 +237,25 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const openPopupButton = document.getElementById("openPopup");
+  const popupForm = document.getElementById("popupForm");
+  const closePopupButton = document.getElementById("closePopup");
+
+  // Show the popup form
+  openPopupButton.addEventListener("click", () => {
+    popupForm.style.display = "flex";
+  });
+
+  // Close the popup form
+  closePopupButton.addEventListener("click", () => {
+    popupForm.style.display = "none";
+  });
+
+  // Close popup when clicking outside of the form
+  window.addEventListener("click", (event) => {
+    if (event.target === popupForm) {
+      popupForm.style.display = "none";
+    }
+  });
+});
