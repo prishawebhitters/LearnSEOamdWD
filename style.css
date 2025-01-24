@@ -1092,7 +1092,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
   }
 
   .associated-slider {
