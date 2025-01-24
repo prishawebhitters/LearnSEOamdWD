@@ -239,3 +239,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
+ // Scroll to the top on button click
+ $(document).on('click', '#scrollToTop', function () {
+  $('html, body').animate({ scrollTop: 0 }, 'fast');
+});

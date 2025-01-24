@@ -1392,6 +1392,7 @@ h2{
     text-decoration: none;
     margin-top: 10px;
     font-size: 14px;
+    width: 200px;
 }
 .btn-read-more:hover {
     background: black !important;
@@ -1629,58 +1630,6 @@ h2{
     margin-bottom: 30px;
 }
 
-/* Panel Group */
-.panel {
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.panel:hover {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.panel-heading {
-    background: #fff;
-    padding: 15px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ddd;
-    transition: background-color 0.3s ease;
-}
-
-.panel-heading:hover {
-    background: #f2f2f2;
-}
-
-.panel-heading .meta-info {
-    font-size: 14px;
-    color: #888;
-}
-
-.toggle-icon {
-    font-size: 20px;
-    font-weight: bold;
-    color: #555;
-    transition: transform 0.3s ease;
-}
-
-.panel-heading.collapsed .toggle-icon {
-    transform: rotate(90deg);
-}
-
-.panel-body {
-    background: #fff;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-}
-
 /* Module List */
 .module-list {
     list-style: none;
@@ -1709,4 +1658,182 @@ h2{
     color: #666;
     display: block;
     margin-top: 5px;
+}
+
+.title {
+    color: #d32f2f;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    /* margin-top: 30px; */
+    text-align: center;
+}
+
+.subtitle {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input-group {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.input-firstname {
+    margin-top: 30px;
+}
+
+.input-lastname {
+    margin-top: 30px;
+}
+
+.input-email {
+    margin-top: 30px;
+}
+
+.input-field {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.input-cut {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50px;
+}
+
+.input-cut-short {
+    width: 68px;
+
+}
+
+.input-field:focus~.input-cut,
+.input-field:not(:placeholder-shown)~.input-cut {
+    transform: translateY(8px);
+}
+
+.input-label {
+    color: #999;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 15px;
+}
+
+.input-field:focus~.input-label,
+.input-field:not(:placeholder-shown)~.input-label {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input-field:not(:placeholder-shown)~.input-label {
+    color: #555;
+}
+
+.input-field:focus~.input-label {
+    color: #d32f2f;
+}
+
+.submit-button {
+
+
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 38px;
+    text-align: center;
+
+}
+
+.submit-button:active {
+    background-color: #b71c1c;
+}
+
+
+
+.popup.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.popup-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-left label {
+    margin-top: 10px;
+}
+
+.popup-left input,
+.popup-left textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
