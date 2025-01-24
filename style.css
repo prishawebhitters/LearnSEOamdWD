@@ -192,7 +192,7 @@
 }
 
 .tools-section h2 { 
-    font-size: 28px;
+    font-size: 32px;
      /* White text for good contrast */
     font-weight: bold;
     margin-bottom: 20px;
@@ -232,11 +232,11 @@
 
 .tool-item:hover {
     transform: translateY(-3px); /* Slight lift on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 10px rgba(196, 164, 164, 0.15);
 }
 .trainers {
     text-align: center;
-    margin: 40px;
+    margin-top: 40px;
     background-color: #fff;
     border-radius: 10px;
     
@@ -1092,7 +1092,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
   }
 
   .associated-slider {
@@ -1306,7 +1306,7 @@ h2{
 .accredited-section{
     padding: 30px 15px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .accredited-list{
     margin-top: 10px;
@@ -1527,7 +1527,7 @@ h2{
 }
 
 .usp-card-title {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
