@@ -163,7 +163,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ==============review slider-========================
 
-
 document.addEventListener('DOMContentLoaded', function () {
   var sliderContainer = document.querySelector('.slider-container');
   var slides = sliderContainer.children;
