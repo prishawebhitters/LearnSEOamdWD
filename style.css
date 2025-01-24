@@ -1098,7 +1098,7 @@ h2{
   .associated-slider {
     display: flex;
     align-items: center;
-    animation: scroll 60s linear infinite;
+    animation: scroll 100s linear infinite;
   }
 
   .associated-slide {
