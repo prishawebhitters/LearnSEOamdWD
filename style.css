@@ -64,6 +64,9 @@
     margin-top: 50px;
     width: 1200px;
 }
+.hero-section{
+    padding: 25px;
+}
 
 /* @media (max-width: 600px) {
     .main-number-section-of-hero {
@@ -79,8 +82,7 @@
 }
 .button-container {
     text-align: center;
-    margin-top: 20px; 
-    background-color: #f1eeee; 
+    margin-top: 20px;  
     padding: 30px 15px; 
     text-align: center; 
 }
@@ -88,7 +90,7 @@
 .btn-apply,
 .btn-download {
     display: inline-block;  /* Ensures the buttons are inline elements */
-    width: 350px;           /* Set equal width */
+    width: 250px;           /* Set equal width */
     height: 60px;           /* Set equal height */
     padding: 0;             /* Remove default padding since width and height are fixed */
     font-size: 18px;        /* Set font size for readability */
@@ -103,7 +105,6 @@
 }
 .btn-apply {
     background-color: #de3335;
-    background-image: linear-gradient(to bottom right, #de3335, #e15454 );
     color: #fff;
     margin-right: 10px;
 }
@@ -115,7 +116,6 @@
 
 .btn-download {
     background-color: black;
-    background-image: linear-gradient(to bottom right, black, #312f2f);
     color: #fff;
 }
 
@@ -1213,6 +1213,7 @@ h2{
  background-image:url('Images/bg1.jpg');
  background-size: 100%;
  text-align: center;
+ padding: 20px;
 }
 .highlight-card {
     background-color: #de3335;
