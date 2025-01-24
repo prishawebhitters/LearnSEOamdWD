@@ -1550,6 +1550,29 @@ h2{
     color: white;
     transition: all .3s linear;
 }
+.cta-section {
+    margin-top: 20px;
+    background-color: #de3335;
+    color:white; 
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 100px;
+  }
+  .abcd {
+    background-color: #f1eeee; 
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .abcd:hover {
+    background: black !important;
+    color: white;
+    transition: all .3s linear;
+  }
 
 /* Animations */
 @keyframes fadeInDown {
