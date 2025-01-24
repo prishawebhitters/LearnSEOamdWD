@@ -203,24 +203,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  const associatedContainer = document.querySelector('.associated-container');
-  const associatedSlider = document.querySelector('.associated-slider');
-  
-  if (associatedSlider) {
-      // Duplicate slides to create seamless infinite scroll
-      const slides = Array.from(associatedSlider.children);
-      const totalSlides = slides.length;
-      
-      // Clone slides and append to create continuous scroll effect
-      slides.forEach(slide => {
-          const clonedSlide = slide.cloneNode(true);
-          associatedSlider.appendChild(clonedSlide);
-      });
-  }
-})
-
 // ==================pop-up-form==============
 function showPopup() {
 const popup = document.getElementById('popup1');
