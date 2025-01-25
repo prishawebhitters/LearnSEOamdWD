@@ -2186,3 +2186,8 @@ h2{
         padding: 6px;
     }
 }
+@media (max-width: 768px) {
+    .ghi {
+        display: none; /* Hides the navbar on screens smaller than 768px */
+    }
+} 
