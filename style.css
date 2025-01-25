@@ -1308,18 +1308,9 @@ h2{
 .highlights-section{
     margin-top: 20px;
 }
-.form-container1{
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-    width: 350px;
-    height: 450px;
-    font-size: 14px;
-}
-.form-container1 input, .form-container1 select {
-    width: 100%;
-}.form-container {
+
+
+.form-container {
     background: white;
     padding: 20px; /* Reduced padding for better fit on small screens */
     border-radius: 10px;
@@ -1399,6 +1390,56 @@ h2{
         padding: 8px; /* Adjust padding */
     }
 }
+.form-container1 {
+    background: white;
+    padding: 15px; /* Slightly increased padding for better spacing */
+    border-radius: 10px;
+    color: black;
+    width: 350px;
+    max-width: 90%; /* Adjusts for smaller screens */
+    height: auto; /* Makes the height flexible */
+    font-size: 14px;
+    margin: 0 auto; /* Centers the form on the page */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.form-container1 input,
+.form-container1 select {
+    width: 100%; /* Ensures inputs take up full width */
+    margin-bottom: 10px; /* Adds spacing between inputs */
+    padding: 10px; /* Ensures comfortable input size */
+    font-size: 14px; /* Keeps text readable */
+    border: 1px solid #ccc; /* Adds a border for better clarity */
+    border-radius: 5px; /* Rounds input edges */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) { /* Targets tablets and small devices */
+    .form-container1 {
+        width: 100%; /* Takes full width of the screen */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .form-container1 input,
+    .form-container1 select {
+        padding: 8px; /* Adjust input padding */
+        font-size: 12px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) { /* Targets very small devices like phones */
+    .form-container1 {
+        padding: 8px; /* Further reduce padding */
+    }
+
+    .form-container1 input,
+    .form-container1 select {
+        padding: 6px; /* Smaller padding for compact design */
+        font-size: 12px; /* Keeps text legible on small screens */
+    }
+}
+
 
 .hhh{
     font-size: 24px;
