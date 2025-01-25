@@ -247,7 +247,7 @@ textarea {
     transition: all .3s linear;
 }
 .tools-section {
-    background-color: #f1eeee  ; /* Red background */
+    background-color: #f1eeee  ; 
     padding: 30px 15px;
     text-align: center;
     margin-top: 40px;
@@ -295,6 +295,14 @@ textarea {
 .tool-item:hover {
     transform: translateY(-3px); /* Slight lift on hover */
     box-shadow: 0 6px 10px rgba(196, 164, 164, 0.15);
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .tool-item {
+        flex-basis: calc(50% - 15px); /* Show 2 items per row */
+        width: auto; /* Allow flexible width */
+    }
 }
 .trainers {
     text-align: center;
