@@ -304,6 +304,11 @@ textarea {
         width: auto; /* Allow flexible width */
     }
 }
+
+.weg{
+    padding: 15px;
+}
+
 .trainers {
     text-align: center;
     margin-top: 40px;
