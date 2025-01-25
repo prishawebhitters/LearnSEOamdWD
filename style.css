@@ -1228,6 +1228,7 @@ h2{
 .form1{
     background-color: #f1eeee;
     padding: 20px;
+    text-align:center;
 }
 .highlights-section{
     margin-top: 20px;
@@ -1574,6 +1575,7 @@ h2{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
+    margin-top: 5px;
   }
   .abcd:hover {
     background: black !important;
