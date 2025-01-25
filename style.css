@@ -1273,7 +1273,7 @@ h2{
     background-size: cover; /* Ensures the background scales proportionally */
     background-position: center; /* Centers the image */
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   
   /* Mobile responsiveness */
