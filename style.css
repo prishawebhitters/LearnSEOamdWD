@@ -1308,15 +1308,6 @@ h2{
 .highlights-section{
     margin-top: 20px;
 }
-.form-container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    color: black;
-    width: 450px;
-    height: 600px;
-    font-size: 14px;
-}
 .form-container1{
     background: white;
     padding: 10px;
@@ -1328,21 +1319,87 @@ h2{
 }
 .form-container1 input, .form-container1 select {
     width: 100%;
+}.form-container {
+    background: white;
+    padding: 20px; /* Reduced padding for better fit on small screens */
+    border-radius: 10px;
+    color: black;
+    width: 450px;
+    max-width: 90%; /* Ensures the form adjusts to smaller screen sizes */
+    height: auto; /* Allows height to adjust based on content */
+    font-size: 14px;
+    margin: 0 auto; /* Centers the form horizontally */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
-.form-container input, .form-container select {
+
+.form-container input, 
+.form-container select, 
+.form-container textarea {
     width: 100%;
     margin-bottom: 10px;
-    padding: 8px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Adds a border for clarity */
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
+
 .form-container button {
     background-color: #de3335;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
+    font-size: 16px; /* Slightly larger font for better readability */
     width: 100%;
     border-radius: 5px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+.form-container button:hover {
+    background-color: #b62a2a; /* Slightly darker on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) { /* Tablets and small devices */
+    .form-container {
+        width: 100%; /* Takes up full width of the screen */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .form-container h3 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .form-container button {
+        font-size: 14px; /* Reduce button font size */
+        padding: 10px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) { /* Very small devices like phones */
+    .form-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .form-container input, 
+    .form-container select, 
+    .form-container textarea {
+        padding: 8px; /* Adjust input padding */
+        font-size: 12px; /* Smaller font for inputs */
+    }
+
+    .form-container h3 {
+        font-size: 16px; /* Adjust heading size */
+    }
+
+    .form-container button {
+        font-size: 12px; /* Further reduce button font size */
+        padding: 8px; /* Adjust padding */
+    }
+}
+
 .hhh{
     font-size: 24px;
     font-weight: 700;
