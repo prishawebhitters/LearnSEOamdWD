@@ -238,24 +238,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 document.addEventListener("DOMContentLoaded", () => {
-  const openPopupButton = document.getElementById("openPopup");
+  // Select all buttons that should open the popup
+  const openPopupButtons = document.querySelectorAll(".openPopup");
   const popupForm = document.getElementById("popupForm");
   const closePopupButton = document.getElementById("closePopup");
 
-  // Show the popup form
-  openPopupButton.addEventListener("click", () => {
-    popupForm.style.display = "flex";
+  // Attach event listeners to all buttons with class 'openPopup'
+  openPopupButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      popupForm.style.display = "flex"; // Show the popup
+    });
   });
 
-  // Close the popup form
+  // Close the popup form when the close button is clicked
   closePopupButton.addEventListener("click", () => {
-    popupForm.style.display = "none";
+    popupForm.style.display = "none"; // Hide the popup
   });
 
-  // Close popup when clicking outside of the form
+  // Close the popup when clicking outside the form
   window.addEventListener("click", (event) => {
     if (event.target === popupForm) {
-      popupForm.style.display = "none";
+      popupForm.style.display = "none"; // Hide the popup
     }
   });
 });
