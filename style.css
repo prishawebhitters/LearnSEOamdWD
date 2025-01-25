@@ -166,6 +166,32 @@
     transform: translateY(-5px);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .hero-section .header h1 {
+        font-size: 24px;
+    }
+
+    .numberdiv div {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section .header h1 {
+        font-size: 20px;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+        font-size: 14px;
+    }
+}
 .cen{
     text-align: center;
 }
