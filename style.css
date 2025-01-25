@@ -93,6 +93,18 @@
     padding: 25px;
 }
 
+img[alt="webhitters"] {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Aspect ratio maintained */
+    margin: 10px auto; /* Adds some spacing around the image */
+}
+
+/* Media Query for additional customization on smaller screens */
+@media (max-width: 768px) {
+    img[alt="webhitters"] {
+        max-width: 90%; /* Slightly smaller on mobile for better fit */
+    }
+}
 /* @media (max-width: 600px) {
     .main-number-section-of-hero {
 
@@ -1252,11 +1264,28 @@ h2{
     transition: all .3s linear;
 }
 .vdc {
- background-image:url('Images/bg1.jpg');
- background-size: 100%;
- text-align: center;
- padding: 20px;
-}
+    background-image: url('Images/bg1.jpg');
+    background-size: cover; /* Ensures the background scales proportionally */
+    background-position: center; /* Centers the image */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) { /* Targets devices with widths of 768px or smaller */
+    .vdc {
+      background-size: cover; /* Ensure the image adjusts for smaller screens */
+      padding: 15px; /* Reduce padding for better fit */
+      font-size: 14px; /* Optional: Adjust font size for readability */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Targets devices with widths of 480px or smaller */
+    .vdc {
+      padding: 10px; /* Further reduce padding for very small screens */
+      font-size: 12px; /* Optional: Further adjust font size */
+    }
+  }
 .highlight-card {
     background-color: #de3335;
     padding: 15px;
