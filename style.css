@@ -1731,30 +1731,75 @@ h2{
     color: white;
     transition: all .3s linear;
 }
+
 .cta-section {
     margin-top: 20px;
     background-color: #de3335;
-    color:white; 
+    color: white;
     padding: 20px;
-    text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    height: 100px;
-  }
-  .abcd {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between heading and button */
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+}
+
+.cta-section h3 {
+    font-size: 28px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.abcd {
     background-color: #f1eeee; 
-    color:black;
+    color: black;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     margin-top: 20px;
-  }
-  .abcd:hover {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.abcd:hover {
     background: black !important;
     color: white;
-    transition: all .3s linear;
-  }
+    transition: all 0.3s linear;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cta-section {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align content */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .cta-section h3 {
+        font-size: 22px; /* Adjust heading size */
+        margin-bottom: 10px; /* Add spacing below the heading */
+    }
+
+    .abcd {
+        font-size: 14px; /* Smaller font size */
+        padding: 8px 15px; /* Compact padding */
+        margin-top: 15px; /* Adjusted spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-section h3 {
+        font-size: 18px; /* Further reduce font size */
+    }
+
+    .abcd {
+        font-size: 12px; /* Compact font size */
+        padding: 6px 10px; /* Adjust padding */
+        margin-top: 10px; /* Minimized spacing */
+    }
+}
 
 /* Animations */
 @keyframes fadeInDown {
