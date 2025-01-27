@@ -790,11 +790,17 @@ h2{
     color: white;
     border-color: white;
 }
+/* Ensure no horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* Video Section */
 .video-section {
     position: relative;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px; /* Adjust width for responsiveness */
     height: auto;
     display: flex;
     justify-content: center;
@@ -803,10 +809,10 @@ h2{
 }
 
 .central-video {
-    position: relative;
+    position: absolute;
     z-index: 2;
-    width: 150px;
-    height: 150px;
+    width: 110px;  /* Reduced size */
+    height: 110px;
 }
 
 .central-video .main-video {
@@ -818,22 +824,19 @@ h2{
 
 .video-circle {
     position: relative;
-    width: 100%;
-    max-width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 /* Circle Video */
 .circle-video {
+    position: absolute;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    margin: 5px;
 }
 
 .circle-video .side-video {
@@ -843,35 +846,36 @@ h2{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Positioning Circle Videos */
+.circle-video:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.circle-video:nth-child(2) { top: 40%; left: 70%; transform: translateY(-50%); }
+.circle-video:nth-child(3) { bottom: 5%; left: 70%; transform: translateX(-50%); }
+.circle-video:nth-child(4) { bottom: 5%; right: 75%; transform: translateX(50%); }
+.circle-video:nth-child(5) { top: 40%; right: 70%; transform: translateY(-50%); }
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .video-section {
         max-width: 100%;
-        flex-direction: column;
+        overflow: hidden;
     }
 
     .video-circle {
-        width: 100%;
+        width: 90%;
         max-width: 250px;
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: center;
+        height: 250px;
     }
 
     .circle-video {
         width: 70px;
         height: 70px;
-        margin: 3px;
     }
 
     .central-video {
-        width: 120px;
-        height: 120px;
+        width: 90px;  /* Smaller on mobile */
+        height: 90px;
     }
 }
-
-
-
 .image-container {
     overflow: hidden;
     height: 206px;
