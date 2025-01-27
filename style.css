@@ -91,7 +91,7 @@
     text-align: center;
     font-family: 'Poppins';
     transition: transform 0.3s ease-out, background-color 0.3s ease-out;
-    margin-top: 50px;
+    margin-top: 60px;
     width: 1200px;
 }
 .hero-section{
@@ -121,8 +121,7 @@ img[alt="webhitters"] {
     font-size: 55px;
 }
 .button-container {
-    text-align: center;
-    margin-top: 40px;  
+    text-align: center;  
     padding: 30px 15px; 
     text-align: center; 
 }
