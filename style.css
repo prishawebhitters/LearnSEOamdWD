@@ -1732,7 +1732,6 @@ h2{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    margin-left: 50px;
     cursor: pointer;
     transition: all 0.3s linear;
     width: 150px;
@@ -1743,6 +1742,12 @@ h2{
     background: black !important;
     color: white;
     transition: all 0.3s linear;
+}
+
+@media (min-width: 992px) {
+    .abcd {
+        margin-left: 50px;
+    }
 }
 
 /* Responsive styles */
