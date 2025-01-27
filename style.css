@@ -124,29 +124,43 @@ img[alt="webhitters"] {
 .button-container {
     text-align: center;  
     padding: 30px 15px; 
-    text-align: center; 
+    display: flex;              /* Flexbox for layout */
+    flex-direction: column;     /* Stack buttons vertically by default */
+    align-items: center;        /* Center buttons horizontally */
+    gap: 20px;                  /* Space between buttons */
+}
+
+@media (min-width: 768px) { 
+    .button-container {
+        flex-direction: row;    /* Arrange buttons side-by-side on larger screens */
+        justify-content: center; 
+        gap: 10px;              /* Adjust spacing between buttons */
+    }
 }
 
 .btn-apply,
 .btn-download {
-    display: inline-block;  /* Ensures the buttons are inline elements */
-    width: 250px;           /* Set equal width */
-    height: 60px;           /* Set equal height */
-    padding: 0;             /* Remove default padding since width and height are fixed */
-    font-size: 18px;        /* Set font size for readability */
-    text-align: center;     /* Center-align text */
-    line-height: 60px;      /* Vertically center text using line-height equal to height */
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
     border: none;
-    border-radius: 5px;     /* Rounded corners */
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 
+                7px 7px 20px 0px rgba(0, 0, 0, 0.1), 
+                4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
     font-family: 'Courier New', monospace;
 }
+
 .btn-apply {
     background-color: #de3335;
     color: #fff;
-    margin-right: 10px;
+    margin-right: 0;            /* Removed fixed margin for better responsiveness */
 }
 
 .btn-apply:hover {
@@ -161,9 +175,10 @@ img[alt="webhitters"] {
 
 .btn-download:hover {
     background-color: #343131;
-    color:#777;
+    color: #777;
     transform: translateY(-5px);
 }
+
 textarea {
     width: 100%; /* Make it responsive by default */
     max-width: 100%; /* Prevent it from exceeding the container width */
