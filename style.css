@@ -983,8 +983,8 @@ h2{
 .gallery {
     margin-top: 15px;
     display: grid;
-    max-width: 90%;
-    height: 80%;
+    max-width: 100%;
+    height: 100%;
 }
 
 .gallery>img {
@@ -1321,6 +1321,7 @@ h2{
 .form1{
     background-color: #f1eeee;
     padding: 20px;
+    text-align: center;
 }
 .highlights-section{
     margin-top: 20px;
@@ -1473,36 +1474,7 @@ h2{
     height: auto;
     flex-shrink: 0;
 }
-  .success-stories {
-    text-align: center;
-    padding: 50px 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #f1eeee; /* Dark green background */
-    color: black;
-  }
-
-  .success-stories h2 {
-    margin-bottom: 10px;
-  }
-
-  .profile-card {
-    background: #fff;
-    color: #333;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 300;
-    width: 300px; /* Fixed card width */
-    margin-left: 70px;
-  }
-
-  .profile-card img {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 15px;
-  }
+  
 .accredited-section{
     padding: 30px 15px;
     text-align: center;
@@ -1775,9 +1747,11 @@ h2{
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-left: 50px;
     cursor: pointer;
     transition: all 0.3s linear;
+    width: 150px;
+    
 }
 
 .abcd:hover {
@@ -2190,3 +2164,63 @@ h2{
         display: none; /* Hides the navbar on screens smaller than 768px */
     }
 } 
+.success-stories {
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1eeee;
+    color: black;
+}
+
+.success-stories h2 {
+    margin-bottom: 10px;
+}
+
+.ef {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: 300;
+    width: 300px;
+}
+
+.profile-card img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+    .row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .profile-card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .profile-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.adc{ 
+    padding-left: 20px;
+}
