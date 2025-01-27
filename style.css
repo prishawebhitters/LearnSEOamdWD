@@ -793,15 +793,17 @@ h2{
 /* Video Section */
 .video-section {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .central-video {
-    position: absolute;
+    position: relative;
     z-index: 2;
     width: 150px;
     height: 150px;
@@ -816,16 +818,22 @@ h2{
 
 .video-circle {
     position: relative;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 300px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Circle Video */
 .circle-video {
-    position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    margin: 5px;
 }
 
 .circle-video .side-video {
@@ -835,36 +843,33 @@ h2{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Positioning Circle Videos */
-.circle-video:nth-child(1) {
-    bottom: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-section {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .video-circle {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .circle-video {
+        width: 70px;
+        height: 70px;
+        margin: 3px;
+    }
+
+    .central-video {
+        width: 120px;
+        height: 120px;
+    }
 }
 
-.circle-video:nth-child(2) {
-    top: 45%;
-    left:80%;
-    transform: translateY(-50%);
-}
-
-.circle-video:nth-child(3) {
-    top: 75%;
-    left: 75%;
-    transform: translateX(-50%);
-}
-
-.circle-video:nth-child(4) {
-    top: 60%;
-    right: 65%;
-    transform: translateY(50%);
-}
-
-.circle-video:nth-child(5) {
-    top: 45%;
-    right: 80%;
-    transform: translateY(-50%);
-}
 
 
 .image-container {
