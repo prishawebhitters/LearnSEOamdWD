@@ -575,8 +575,14 @@ h2{
     font-size: 28px;
 }
 .bg-img-of-btn {
-    background-image: url(Images/background.png);
+    background-image: url(Images/5666.jpeg);
     background-size: cover;
+}
+@media (max-width: 768px) { /* Targets devices with widths of 768px or smaller */
+    .bg-img-of-btn {
+      background-size: cover; /* Ensure the image adjusts for smaller screens */
+      padding: 15px; /* Reduce padding for better fit */
+  }
 }
 
 .pulse {
