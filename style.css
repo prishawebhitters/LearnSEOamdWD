@@ -1199,22 +1199,7 @@ h2{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
     border-radius: 15px; 
   }
-  .owl-carousel .testimonial-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: #fff;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);/* Add shadow effect */
-    margin: 20px;
-    margin-top: 20px;
-    height: 300px;
-    width: 250px;
-    color: black;
-  }
+
   .ac{
     text-align: center;
     margin: 40px;
@@ -2223,4 +2208,45 @@ h2{
 }
 .adc{ 
     padding-left: 20px;
+}
+@media (max-width: 768px) {
+    .xyz {
+        display: none; /* Hides the navbar on screens smaller than 768px */
+    }
+} 
+.owl-carousel .testimonial-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    height: 350px;
+}
+
+.owl-carousel .testimonial-img {
+    max-width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    object-fit: cover;
+    border: 2px solid #de3335;
+}
+
+.owl-carousel .author h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .owl-carousel .testimonial-item {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .ght {
+        display: none;
+    }
 }
