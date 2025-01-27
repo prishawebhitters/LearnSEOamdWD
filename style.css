@@ -21,6 +21,7 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .navbar-logo {
+        position:static;
         flex-direction: column;
         height: auto;
         padding: 10px 15px;
