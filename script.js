@@ -262,3 +262,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// Welcome Popup
+  document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("welcome-popup");
+  const popupClose = document.getElementById("welcome-popup-close");
+
+  // Check if the popup has been shown before
+  const popupShown = localStorage.getItem("welcomePopupShown");
+
+  if (!popupShown) {
+      popup.style.display = "flex"; // Show the popup
+      document.body.classList.add("popup-open"); // Disable scrolling
+      localStorage.setItem("welcomePopupShown", "true"); // Mark popup as shown
+  }
+
+  // Close popup on clicking the close button
+  popupClose.addEventListener("click", function () {
+      popup.style.display = "none";
+      document.body.classList.remove("popup-open"); // Enable scrolling again
+  });
+});
