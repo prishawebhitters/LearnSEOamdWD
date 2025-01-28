@@ -358,7 +358,7 @@ textarea {
 /* Adjust the size of the images */
 .owl-carousel .item img {
     max-width: 80%; /* Adjust width to fit 4 items */
-    height: auto;
+    height: 200px;
     border-radius: 10px; /* Optional for rounded corners */
     transition: transform 0.3s, box-shadow 0.3s;
     
@@ -1202,7 +1202,7 @@ html, body {
   .associated-slider {
     display: flex;
     align-items: center;
-    animation: scroll 100s linear infinite;
+    animation: scroll 240s linear infinite;
   }
 
   .associated-slide {
