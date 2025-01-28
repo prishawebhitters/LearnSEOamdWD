@@ -237,6 +237,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
+
+
+//popup
 document.addEventListener("DOMContentLoaded", () => {
   // Select all buttons that should open the popup
   const openPopupButtons = document.querySelectorAll(".openPopup");
