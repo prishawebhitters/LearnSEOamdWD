@@ -2359,6 +2359,7 @@ body.popup-open {
     .welcome-popup-content {
         width: 95%;
         padding: 15px;
+        margin-top: 40px;
     }
 
     .welcome-popup-close {
