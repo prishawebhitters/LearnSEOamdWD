@@ -1223,7 +1223,7 @@ html, body {
   .associated-slider {
     display: flex;
     align-items: center;
-    animation: scroll 240s linear infinite;
+    animation: scroll 600s linear infinite;
   }
 
   .associated-slide {
